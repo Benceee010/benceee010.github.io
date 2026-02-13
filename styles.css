@@ -247,7 +247,6 @@ h2 {
   line-height: 1.5;
 }
 
-/* --- LÁBLÉC --- */
 .contacts {
   width: 100%;
   height: 200px;
@@ -275,11 +274,19 @@ h2 {
   cursor: pointer;
 }
 
+.foto{
+  display: flex;
+  justify-content: center;
+}
+
+.foto img{
+  width: 700px;
+}
+
 @media screen and (max-width: 768px) {
   
-  /* --- Fejléc és navigáció --- */
   .header {
-    flex-direction: column; /* Egymás alá teszi a logót és a menüt */
+    flex-direction: column;
     padding: 15px;
     gap: 15px;
   }
@@ -291,9 +298,8 @@ h2 {
     padding: 0;
   }
 
-  /* --- Főoldal (Hero szekció) --- */
   .main_pg {
-    flex-direction: column; /* Egymás alá teszi a szöveget és a képedet */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
   }
@@ -303,7 +309,7 @@ h2 {
   }
 
   .texts h1 {
-    font-size: 3.5rem; /* Sokkal kisebb betűméret, hogy kiférjen */
+    font-size: 3.5rem;
     padding-top: 20px;
   }
 
@@ -312,7 +318,7 @@ h2 {
   }
 
   .bankilogo {
-    margin: 20px auto 0; /* Középre igazítás a korábbi 38% helyett */
+    margin: 20px auto 0;
     width: 150px;
   }
 
@@ -326,10 +332,9 @@ h2 {
     padding: 20px 0;
   }
 
-  /* --- Kártyák --- */
   .card {
-    width: 90%; /* 30% helyett szinte teljesen kitölti a képernyőt */
-    height: auto; /* Engedjük, hogy alkalmazkodjon a tartalomhoz */
+    width: 90%; 
+    height: auto;
     padding-bottom: 20px;
   }
 
@@ -337,7 +342,6 @@ h2 {
     padding: 30px;
   }
 
-  /* --- Címsorok és szövegek --- */
   .section-title h1 {
     font-size: 2.5rem;
     text-align: center;
@@ -349,17 +353,16 @@ h2 {
     padding: 0 10px;
   }
 
-  /* --- Rólam szekció --- */
+
   .hh {
     padding: 0 5%;
   }
 
   .bemutatkozas {
-    font-size: 1.1rem; /* Kényelmesebb olvasási méret telefonon */
-    text-align: justify; /* Hosszú szöveg szebb elrendezése */
+    font-size: 1.1rem;
+    text-align: justify;
   }
 
-  /* --- Lábléc --- */
   .contacts {
     margin-top: 50px;
     height: auto;
@@ -367,11 +370,15 @@ h2 {
   }
 
   .elerh {
-    gap: 30px; /* Kisebb távolság az ikonok között */
+    gap: 30px;
   }
 
   .elerh img {
-    width: 45px; /* Kisebb ikonok */
+    width: 45px;
     margin-top: 15px;
+  }
+
+  .foto img{
+    width: 300px;
   }
 }
