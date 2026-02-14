@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
+/* háttér: #111213 */
+/* szöveg: #e3e3e3 */
+/* másodlagos: #2A2D31 */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,7 +20,7 @@ body {
 }
 
 html{
-  scroll-padding-top: 80px;
+  scroll-padding-top: 80px; /* évfolyamnak meghagyja a helyet 02.13 */
 }
 
 .header {
@@ -123,7 +127,8 @@ html{
   margin-left: 38%;
 }
 
-.me {
+.me { /* responsive 01.18 */
+
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -134,7 +139,7 @@ html{
   display: flex;
   justify-content: space-evenly;
   padding: 2% 0%;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* ? */
   gap: 20px;
 }
 
@@ -152,6 +157,7 @@ html{
   background-color: #2A2D31;
   border-radius: 2rem;
   transition: 0.5s ease-in-out;
+  
 }
 
 .card:hover {
@@ -283,7 +289,7 @@ h2 {
   width: 700px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { /* go git és teló teszt 02.12 */
   
   .header {
     flex-direction: column;
